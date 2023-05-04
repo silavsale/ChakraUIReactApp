@@ -1,6 +1,8 @@
 # Application build with Vite, React, Typescript, ChakraUI.
 
-Emergency Dispatch Simulator is a study-focused web app that mimics the functions of a real emergency dispatch system.
+## Emergency Dispatch Simulator is a study-focused web app that mimics the functions of a real emergency dispatch system.
+
+### Project structure
 
 ---
 
@@ -15,14 +17,25 @@ Emergency Dispatch Simulator is a study-focused web app that mimics the function
   - `NavBar.tsx:` The navigation bar component for navigating between pages.
   - `PrivateRoute.tsx:` A higher-order component that restricts access to certain routes based on user authentication.
 
+---
+
 - `contexts/:` Contains the React context providers for managing global state.
   - `AuthContext.tsx:` Provides user authentication state and related functions.
   - `EmergencyContext.tsx:` Provides emergency data state and related functions.
+
+---
+
 - `services/:` Contains services to interact with external APIs or perform complex logic.
   - `authService.ts:` Handles user authentication, including login, registration, and token management.
   - `emergencyService.ts:` Handles fetching, creating, updating, and deleting emergency data.
+
+---
+
 - `types/:` Contains TypeScript type definitions for the app's data models.
   - `Emergency.ts:` Defines the Emergency data model.
   - `User.ts:` Defines the User data model.
+
+---
+
 - `utils/:` Contains utility functions and shared code.
   - `api.ts:` Configures a shared Axios instance for making API requests.
